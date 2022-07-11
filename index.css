@@ -58,6 +58,8 @@ html {
   line-height: 24px;
   text-align: center;
   color: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
 }
 
 .input-field:focus {

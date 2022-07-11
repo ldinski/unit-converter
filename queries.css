@@ -12,6 +12,8 @@
     height: 50px;
     width: 120px;
     font-size: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
   }
 
   .output {

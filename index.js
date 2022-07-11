@@ -17,19 +17,23 @@ const kgToPound = 2.204;
 convertBtn.addEventListener("click", function () {
   let baseValue = inputEl.value;
 
-  metreFeet.textContent = `${baseValue} metres = ${(
-    baseValue * metreToFeet
-  ).toFixed(3)} feet | ${baseValue} feet = ${(baseValue / metreToFeet).toFixed(
-    3
-  )} metres`;
+  if (baseValue === "") {
+    alert("Please input a number!");
+  } else {
+    metreFeet.textContent = `${baseValue} metres = ${(
+      baseValue * metreToFeet
+    ).toFixed(3)} feet | ${baseValue} feet = ${(
+      baseValue / metreToFeet
+    ).toFixed(3)} metres`;
 
-  litreGallon.textContent = `${baseValue} litres = ${(
-    baseValue * litreToGallon
-  ).toFixed(3)} gallons | ${baseValue} gallons = ${(
-    baseValue / litreToGallon
-  ).toFixed(3)} litres`;
+    litreGallon.textContent = `${baseValue} litres = ${(
+      baseValue * litreToGallon
+    ).toFixed(3)} gallons | ${baseValue} gallons = ${(
+      baseValue / litreToGallon
+    ).toFixed(3)} litres`;
 
-  kgPounds.textContent = `${baseValue} kg = ${(baseValue * kgToPound).toFixed(
-    3
-  )} pounds | ${baseValue} pounds = ${(baseValue / kgToPound).toFixed(3)} kg`;
+    kgPounds.textContent = `${baseValue} kg = ${(baseValue * kgToPound).toFixed(
+      3
+    )} pounds | ${baseValue} pounds = ${(baseValue / kgToPound).toFixed(3)} kg`;
+  }
 });

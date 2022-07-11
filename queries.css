@@ -1,0 +1,59 @@
+@media (max-width: 34.5em) {
+  .container {
+    height: 730px;
+    width: 400px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .input-field {
+    height: 50px;
+    width: 120px;
+    font-size: 40px;
+  }
+
+  .output {
+    width: 400px;
+  }
+
+  .output-div {
+    width: 350px;
+  }
+
+  .conversion-head {
+    font-size: 18px;
+  }
+
+  .conversion-output {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 25em) {
+  .container {
+    height: 730px;
+    width: 335px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .output {
+    width: 350px;
+  }
+
+  .output-div {
+    width: 300px;
+  }
+
+  .conversion-head {
+    font-size: 17px;
+  }
+
+  .conversion-output {
+    font-size: 12px;
+  }
+}
